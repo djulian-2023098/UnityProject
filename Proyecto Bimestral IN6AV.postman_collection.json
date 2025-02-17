@@ -1,0 +1,509 @@
+{
+	"info": {
+		"_postman_id": "a6cac9df-0db6-453a-8109-64077635af39",
+		"name": "Proyecto Bimestral IN6AV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956977"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "TestCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/category/test",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzk3Njc5NTUsImV4cCI6MTczOTc3ODc1NX0.7qjfS5lOaxdhbgmkh9JERAXRIwg_ZpbWaAnk8T8w87A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/category/get",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCategories",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzk3Njc5NTUsImV4cCI6MTczOTc3ODc1NX0.7qjfS5lOaxdhbgmkh9JERAXRIwg_ZpbWaAnk8T8w87A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Fruits",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "All the fruits",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/category/add",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCategories",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzk3Njc5NTUsImV4cCI6MTczOTc3ODc1NX0.7qjfS5lOaxdhbgmkh9JERAXRIwg_ZpbWaAnk8T8w87A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Foods",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "All the food",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/category/update/67b2c625f20302177270f412",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category",
+								"update",
+								"67b2c625f20302177270f412"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategories",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzk3Njc5NTUsImV4cCI6MTczOTc3ODc1NX0.7qjfS5lOaxdhbgmkh9JERAXRIwg_ZpbWaAnk8T8w87A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/category/delete/67b2c5f8f20302177270f40f",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category",
+								"delete",
+								"67b2c5f8f20302177270f40f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Client",
+					"item": [
+						{
+							"name": "UpdateClient",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM5NzY3NDkwLCJleHAiOjE3Mzk3NzgyOTB9.r_d4WRTzPUunrf3dnWfm2QurReBQpzXrsXXIblwLAUw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Pablo",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:2636/user/updateClient/67b2bebd1411cc1158eff5ed",
+									"host": [
+										"localhost"
+									],
+									"port": "2636",
+									"path": [
+										"user",
+										"updateClient",
+										"67b2bebd1411cc1158eff5ed"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteClient",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzM5NzY3NDkwLCJleHAiOjE3Mzk3NzgyOTB9.r_d4WRTzPUunrf3dnWfm2QurReBQpzXrsXXIblwLAUw",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2636/user/deleteClient/67b2bcae4df2436953b20f61",
+									"host": [
+										"localhost"
+									],
+									"port": "2636",
+									"path": [
+										"user",
+										"deleteClient",
+										"67b2bcae4df2436953b20f61"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "UpdateAdmin",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYjgyZjM0MWMxZDgwMjU0MDNkYjciLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzk3Njc2NjksImV4cCI6MTczOTc3ODQ2OX0.Mdx8UFb3Sj5OGsb4TCkdhcBDymXSd-DDffu7wDf9D_c",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Simon Matias",
+											"type": "text"
+										},
+										{
+											"key": "surname",
+											"value": "Dice Wow",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:2636/user/updateUser/67b2bcae4df2436953b20f61",
+									"host": [
+										"localhost"
+									],
+									"port": "2636",
+									"path": [
+										"user",
+										"updateUser",
+										"67b2bcae4df2436953b20f61"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteAdmin",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzk3Njc4MjEsImV4cCI6MTczOTc3ODYyMX0.VHZw6C-0yfWWvUt6zuPVi_BkDN5GlBrYWM7B50QcSFA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:2636/user/deleteUser/67b2bcae4df2436953b20f61",
+									"host": [
+										"localhost"
+									],
+									"port": "2636",
+									"path": [
+										"user",
+										"deleteUser",
+										"67b2bcae4df2436953b20f61"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ChangeRole",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzk3Njc5NTUsImV4cCI6MTczOTc3ODc1NX0.7qjfS5lOaxdhbgmkh9JERAXRIwg_ZpbWaAnk8T8w87A",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "role",
+											"value": "CLIENT",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:2636/user/changeRole/67b2bebd1411cc1158eff5ed",
+									"host": [
+										"localhost"
+									],
+									"port": "2636",
+									"path": [
+										"user",
+										"changeRole",
+										"67b2bebd1411cc1158eff5ed"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "test",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = JSON.parse(responseBody);\r",
+									"postman.setGlobalVariable(\"token\", data.token)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/user/test",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"user",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Pablo",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Picapiedra",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Pablito",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "p@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123Aa!",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/register",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userLoggin",
+									"value": "1dylan",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123Aa!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/login",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
