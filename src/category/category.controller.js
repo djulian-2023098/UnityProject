@@ -106,7 +106,6 @@ export const updateCategory = async(req, res)=>{
         if(category.clasification == 'DEFAULT') return res.status(401).send({message: 'You cannot delete the default category.'})
 
         //Change the products to a default category (We will add it later when we have products.)
-        /*
         let products = await Product.find()
         let categoryDefault = await Category.findOne({clasification: 'DEFAULT'})
         for (let i = 0; i < products.length; i++) {
@@ -115,7 +114,7 @@ export const updateCategory = async(req, res)=>{
                 product.category = categoryDefault.id
                 await product.save()
             }
-        }*/
+        }
         
         await Category.deleteOne({ _id: id })
         
