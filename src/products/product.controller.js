@@ -26,12 +26,22 @@ export const addProduct = async(req,res)=>{
 //GET ALL PRODUCTS
 export const getAllProducts = async(req, res)=>{
     try {
-        const {sortBy, order, outOfStock, bestSellers} = req.query
+        const {sortBy, order, outOfStock, bestSellers, name, category} = req.query
 
         const filter = {}
 
         if(outOfStock === 'true'){
             filter.stock = 0
+        }
+
+        //FILTER CATEGORY
+        if(category){
+            filter.category = category
+        }
+
+        //FILTER NAME
+        if(name){
+            filter.name = { $regex: name, $options: "i"}
         }
 
         const sortField = bestSellers == 'true' ? 'sold' : sortBy || 'stock'

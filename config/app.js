@@ -9,6 +9,7 @@ import { limiter } from "../middlewares/rate.limits.js";
 import categoryRoutes from "../src/category/category.routes.js"
 import userRoutes from "../src/user/user.routes.js"
 import productRoutes from '../src/products/product.routes.js'
+import cartRoutes from '../src/cart/cart.routes.js'
 
 const configs = (app)=>{
     app.use(express.json())
@@ -24,6 +25,7 @@ const routes = (app)=>{
     app.use('/category',categoryRoutes)
     app.use('/user', userRoutes)
     app.use('/product', productRoutes)
+    app.use('/cart', cartRoutes)
 }
 
 export const initServer = ()=>{
