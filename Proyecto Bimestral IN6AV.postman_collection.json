@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "a6cac9df-0db6-453a-8109-64077635af39",
+		"_postman_id": "e9cc6029-7f72-4d56-8634-449d618302bc",
 		"name": "Proyecto Bimestral IN6AV",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "37956977"
+		"_exporter_id": "37956977",
+		"_collection_link": "https://a22222-7420.postman.co/workspace/a-Workspace~ea519077-aa82-4b03-ac2c-03b91e700858/collection/37956977-e9cc6029-7f72-4d56-8634-449d618302bc?action=share&source=collection_link&creator=37956977"
 	},
 	"item": [
 		{
@@ -29,38 +30,13 @@
 					"response": []
 				},
 				{
-					"name": "GetCategory",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzk3Njc5NTUsImV4cCI6MTczOTc3ODc1NX0.7qjfS5lOaxdhbgmkh9JERAXRIwg_ZpbWaAnk8T8w87A",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "localhost:2636/category/get",
-							"host": [
-								"localhost"
-							],
-							"port": "2636",
-							"path": [
-								"category",
-								"get"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "AddCategories",
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzk3Njc5NTUsImV4cCI6MTczOTc3ODc1NX0.7qjfS5lOaxdhbgmkh9JERAXRIwg_ZpbWaAnk8T8w87A",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NDEwNTkyNjksImV4cCI6MTc0MTA3MDA2OX0.o9tA9PIYC_6tWMt3gJEZTQ87nyr1rY_IU9ZqsAaG0kE",
 								"type": "text"
 							}
 						],
@@ -69,12 +45,12 @@
 							"urlencoded": [
 								{
 									"key": "name",
-									"value": "Fruits",
+									"value": "Videogames",
 									"type": "text"
 								},
 								{
 									"key": "description",
-									"value": "All the fruits",
+									"value": "Video games for Xbox, PS5 and Nintendo",
 									"type": "text"
 								}
 							]
@@ -141,12 +117,12 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzk3Njc5NTUsImV4cCI6MTczOTc3ODc1NX0.7qjfS5lOaxdhbgmkh9JERAXRIwg_ZpbWaAnk8T8w87A",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NDEwNTI0ODUsImV4cCI6MTc0MTA2MzI4NX0.u-Xm2sgzQ6ZS84HaIrktZaJZoATDuKkS5Pl5ZpGClBM",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "localhost:2636/category/delete/67b2c5f8f20302177270f40f",
+							"raw": "localhost:2636/category/delete/67b2c625f20302177270f412",
 							"host": [
 								"localhost"
 							],
@@ -154,7 +130,7 @@
 							"path": [
 								"category",
 								"delete",
-								"67b2c5f8f20302177270f40f"
+								"67b2c625f20302177270f412"
 							]
 						}
 					},
@@ -225,6 +201,100 @@
 										"user",
 										"deleteClient",
 										"67b2bcae4df2436953b20f61"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getForName",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQxMDU3NDMwLCJleHAiOjE3NDEwNjgyMzB9.njVEOstgW4hfD6i7JsK2vfHae_9uycd56XTEA9k_6aA",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2636/product/getAll?name=mouse",
+									"host": [
+										"localhost"
+									],
+									"port": "2636",
+									"path": [
+										"product",
+										"getAll"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "mouse"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getForCategory",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQxMDU5MDU4LCJleHAiOjE3NDEwNjk4NTh9.JJWRssmi7b3e7L-XL_PtHPTDnRJOWJq2Ai_imDeadaY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "localhost:2636/product/getAll?category=67c6735a20fae40d6ff32b54",
+									"host": [
+										"localhost"
+									],
+									"port": "2636",
+									"path": [
+										"product",
+										"getAll"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "67c6735a20fae40d6ff32b54"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Record",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQxMDYzNjA5LCJleHAiOjE3NDEwNzQ0MDl9.v0PYDq7wfbkAaTA9GJEc7zNjOkSx6R0CWY3167VaCU8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:2636/buy/history",
+									"host": [
+										"localhost"
+									],
+									"port": "2636",
+									"path": [
+										"buy",
+										"history"
 									]
 								}
 							},
@@ -357,6 +427,57 @@
 					]
 				},
 				{
+					"name": "searchProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/product/search/67c615d8b0dbd19be5995929",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"search",
+								"67c615d8b0dbd19be5995929"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getForBestSeller",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQxMDU5MDU4LCJleHAiOjE3NDEwNjk4NTh9.JJWRssmi7b3e7L-XL_PtHPTDnRJOWJq2Ai_imDeadaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/product/getAll?bestSellers=true",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"getAll"
+							],
+							"query": [
+								{
+									"key": "bestSellers",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "test",
 					"event": [
 						{
@@ -393,6 +514,31 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "GetCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQxMDU5MDU4LCJleHAiOjE3NDEwNjk4NTh9.JJWRssmi7b3e7L-XL_PtHPTDnRJOWJq2Ai_imDeadaY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/category/get",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"category",
+								"get"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -412,22 +558,22 @@
 							"urlencoded": [
 								{
 									"key": "name",
-									"value": "Pablo",
+									"value": "Emanuel",
 									"type": "text"
 								},
 								{
 									"key": "surname",
-									"value": "Picapiedra",
+									"value": "Julian",
 									"type": "text"
 								},
 								{
 									"key": "username",
-									"value": "Pablito",
+									"value": "1ema",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "p@gmail.com",
+									"value": "ema@gmail.com",
 									"type": "text"
 								},
 								{
@@ -480,7 +626,7 @@
 							"urlencoded": [
 								{
 									"key": "userLoggin",
-									"value": "1dylan",
+									"value": "pablito",
 									"type": "text"
 								},
 								{
@@ -498,6 +644,348 @@
 							"port": "2636",
 							"path": [
 								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/product/test",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYzAwMmQ5ZDA5NzJkNWYyYzJhNDEiLCJ1c2VybmFtZSI6IjFkeWxhbiIsIm5hbWUiOiJEeWxhbiAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NDEwNTkyNjksImV4cCI6MTc0MTA3MDA2OX0.o9tA9PIYC_6tWMt3gJEZTQ87nyr1rY_IU9ZqsAaG0kE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Super Mario Party",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Super Mario Party for Nintendo Switch",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "599",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "150",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "67c6759e20fae40d6ff32b6a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/product/add",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/product/search/67c615d8b0dbd19be5995929",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"search",
+								"67c615d8b0dbd19be5995929"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Keyboard edicion 25 anniversary ryzen",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "575",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "67b273f13ad55d7ffd706c2b",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/product/update/67c65a7fadef5854d57b4e0c",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"update",
+								"67c65a7fadef5854d57b4e0c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/product/delete/67c65a94adef5854d57b4e0e",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"product",
+								"delete",
+								"67c65a94adef5854d57b4e0e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "testCart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/cart/test",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"cart",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQxMDYxOTg3LCJleHAiOjE3NDEwNzI3ODd9.cCGFhAf50I6eQ4846tLIvRkn9Bhr2v60tV1rTPz6C9c",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "productId",
+									"value": "67c673d720fae40d6ff32b59",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/cart/addCart",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"cart",
+								"addCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCart",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQxMDYzNjA5LCJleHAiOjE3NDEwNzQ0MDl9.v0PYDq7wfbkAaTA9GJEc7zNjOkSx6R0CWY3167VaCU8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/cart/getCart",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"cart",
+								"getCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCart",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2ODQ1MDI5Mzc3YjhlZjdiY2M3YTQiLCJ1c2VybmFtZSI6IjFlbWEiLCJuYW1lIjoiRW1hbnVlbCIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3NDEwNjQ1NTYsImV4cCI6MTc0MTA3NTM1Nn0.QJE5QMOBKjCtqqdnWWrqjdJrcuAFp4tVzOCE2FG6x4Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/cart/delete/67c6895e633f856ed14a6c9e",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"cart",
+								"delete",
+								"67c6895e633f856ed14a6c9e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCart",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQxMDY1MTk4LCJleHAiOjE3NDEwNzU5OTh9.LRj0vSk504pl7Z5sVv3Hkwgw0P6tVcbiU17VnebbVM4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "product",
+									"value": "67c6769020fae40d6ff32b73",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/cart/update/67c6895e633f856ed14a6c9e",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"cart",
+								"update",
+								"67c6895e633f856ed14a6c9e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Purcharse",
+			"item": [
+				{
+					"name": "finishPurcharse",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2IyYmViZDE0MTFjYzExNThlZmY1ZWQiLCJ1c2VybmFtZSI6InBhYmxpdG8iLCJuYW1lIjoiUGFibG8iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNzQxMDYzNjA5LCJleHAiOjE3NDEwNzQ0MDl9.v0PYDq7wfbkAaTA9GJEc7zNjOkSx6R0CWY3167VaCU8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/buy/completePurcharse",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"buy",
+								"completePurcharse"
 							]
 						}
 					},
