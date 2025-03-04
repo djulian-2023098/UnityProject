@@ -6,14 +6,14 @@ import Product from '../products/product.model.js';
 
 export const completePurchase = async (req, res) => {
     try {
-        // Buscar el carrito activo del usuario
+        //Search cart from user
         const cart = await Cart.findOne({ user: req.user._id, status: 'ACTIVE' });
 
         if (!cart) {
             return res.status(404).send({ message: 'No active cart found' });
         }
 
-        // Calcular el precio total y crear los items de la factura
+        //Calculate the total price and create the invoice items
         let totalAmount = 0;
         const items = [];
 
@@ -33,7 +33,7 @@ export const completePurchase = async (req, res) => {
             });
         }
 
-        // Crear la factura
+        //Create an invoice
         const invoice = new Invoice({
             user: req.user._id,
             cart: cart._id,
@@ -44,7 +44,7 @@ export const completePurchase = async (req, res) => {
 
         await invoice.save();
 
-        // Actualizar el estado del carrito a 'COMPLETED'
+        //Change cart status
         cart.status = 'COMPLETED';
         await cart.save();
 
@@ -57,5 +57,32 @@ export const completePurchase = async (req, res) => {
     } catch (error) {
         console.error(error);
         return res.status(500).send({ message: 'Error completing purchase' });
+    }
+};
+
+export const getHistory = async (req, res) => {
+    try {
+        const userId = req.user._id;
+
+        const invoices = await Invoice.find({ user: userId }).sort({ createdAt: -1 }); 
+
+        if (!invoices || invoices.length === 0) {
+            return res.status(404).json({
+                success: false,
+                message: "No purchase history found"
+            });
+        }
+
+        return res.status(200).json({
+            success: true,
+            message: "Purchase history retrieved successfully",
+            invoices
+        });
+    } catch (error) {
+        console.error(error);
+        return res.status(500).send({
+            success: false,
+            message: "Error retrieving purchase history"
+        });
     }
 };
